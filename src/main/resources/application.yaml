@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ead-authuser
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+      jdbc:
+        lob.non-contextual-creation: true
+    properties:
+      hibernate:
+        show_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
